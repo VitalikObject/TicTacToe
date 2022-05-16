@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace TicTacToe
@@ -9,6 +9,7 @@ namespace TicTacToe
         private static bool isGameOver = false;
         private const string ALLOWED_CHARS = "XO";
         private const int LINE_LENGHT = 3;
+
         public static void Main()
         {
             Init();
@@ -114,7 +115,7 @@ namespace TicTacToe
 
             if (isWinner)
             {
-                Console.WriteLine($"User: {symbol} won!");
+                Console.WriteLine($"Player: {symbol} won!");
                 Console.ReadLine();
             }
         }
